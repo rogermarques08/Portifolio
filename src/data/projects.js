@@ -11,7 +11,7 @@ const projects = [
     name: 'Previsão do Tempo',
     img: 'https://i.ibb.co/RSZPyYq/Captura-de-tela-de-2023-04-04-10-41-35.png',
     stack: 'Front-End',
-    desc: `Esta é uma aplicação com suporte para mobile e desktop bem simples de , 
+    desc: `Esta é uma aplicação com suporte para mobile e desktop bem simples de usar, 
     onde é possível pesquisar e verificar a previsão do tempo de sua cidade, além de 
     algumas informações extras como umidade do ar, velocidade do vento e horário do
     nascer e pôr do sol.`,

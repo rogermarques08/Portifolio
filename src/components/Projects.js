@@ -8,14 +8,19 @@ function Projects() {
         {projects.map((project) => (
           <div
             key={ project.name }
-            className="w-80 h-[26rem] border-2 border-[#a03d30] p-3 rounded-xl"
+            className="w-80 border-2 border-[#a03d30] p-3 rounded-xl"
           >
             <h1
               className="text-2xl mt-2 text-neutral-400 font-semibold"
             >
               {project.name}
             </h1>
-            <img src={ project.img } alt={ project.name } width="100%" />
+            <img
+              src={ project.img }
+              alt={ project.name }
+              width="100%"
+              className="rounded"
+            />
             <p className="font-semibold text-[#a03d30]">{project.stack}</p>
             <p className="text-white font-semibold mt-2">{project.desc}</p>
           </div>
