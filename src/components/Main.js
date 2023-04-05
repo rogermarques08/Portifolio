@@ -4,6 +4,7 @@ function Main() {
   return (
     <main className="w-screen h-screen">
       <Home />
+      <hr className="mt-4 border-[#a03d30]" />
     </main>
   );
 }
