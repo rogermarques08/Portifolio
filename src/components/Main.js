@@ -1,5 +1,6 @@
 import Home from './Home';
 import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 function Main() {
   return (
@@ -8,6 +9,7 @@ function Main() {
       <hr className="mt-4 border-[#a03d30]" />
       <AboutMe />
       <hr className="mt-4 border-[#a03d30]" />
+      <Projects />
     </main>
   );
 }
