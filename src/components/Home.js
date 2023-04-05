@@ -1,4 +1,3 @@
-import Contact from './Contact';
 
 function Home() {
   return (
@@ -22,7 +21,6 @@ function Home() {
           />
         </a>
       </div>
-      <Contact />
     </>
 
   );

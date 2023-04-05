@@ -1,7 +1,6 @@
 function AboutMe() {
   return (
     <div className="mt-4">
-      <h1 className="text-3xl font-semibold text-[#a03d30]">Sobre Mim</h1>
       <p className="text-lg font-medium text-white mt-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
