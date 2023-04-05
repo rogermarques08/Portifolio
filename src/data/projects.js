@@ -6,6 +6,7 @@ const projects = [
     desc: `Meu primeiro projeto pessoal que desenvolvi durante as férias de fim de ano, 
     onde construi uma aplicação utilizando React com tema de Games. Nele é possível fazer 
     login, pesquisar e vizualizar algumas informações sobre jogos e favorita-los`,
+    link: 'https://games-app-rosy.vercel.app/',
   },
   {
     name: 'Previsão do Tempo',
@@ -15,6 +16,7 @@ const projects = [
     onde é possível pesquisar e verificar a previsão do tempo de sua cidade, além de 
     algumas informações extras como umidade do ar, velocidade do vento e horário do
     nascer e pôr do sol.`,
+    link: 'https://weather-app-eta-ashy.vercel.app/',
   },
 ];
 
