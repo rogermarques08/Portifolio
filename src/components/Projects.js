@@ -12,18 +12,14 @@ function Projects() {
             rel="noreferrer"
             key={ project.name }
           >
-            <div
-              className="w-80 bg-[#202020] p-3 rounded-xl"
-            >
+            <div className="w-80 bg-[#202020] p-3 rounded-xl">
               <img
                 src={ project.img }
                 alt={ project.name }
                 width="100%"
                 className="rounded"
               />
-              <h1
-                className="text-2xl mt-2 text-neutral-400 font-semibold"
-              >
+              <h1 className="text-2xl mt-2 text-neutral-400 font-semibold">
                 {project.name}
               </h1>
               <p className="font-semibold text-[#a03d30]">{project.stack}</p>
