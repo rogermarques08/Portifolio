@@ -1,11 +1,20 @@
+import { motion } from 'framer-motion';
+import useMotion from '../hooks/useMotion';
 import Contact from './Contact';
 
 function Footer() {
+  const [ref, boxVariant, control] = useMotion();
   return (
-    <footer className="font-medium mt-4">
+    <motion.div
+      className="font-medium mt-4"
+      ref={ ref }
+      variants={ boxVariant }
+      initial="hidden"
+      animate={ control }
+    >
       <p className="text-white text-center">©2023 por Roger Marques</p>
       <Contact />
-    </footer>
+    </motion.div>
   );
 }
 

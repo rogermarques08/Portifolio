@@ -1,8 +1,17 @@
+import { motion } from 'framer-motion';
 import technologies from '../data/technologies';
+import useMotion from '../hooks/useMotion';
 
 function Technologies() {
+  const [ref, boxVariant, control] = useMotion();
   return (
-    <div className="mt-4">
+    <motion.div
+      className="mt-4"
+      ref={ ref }
+      variants={ boxVariant }
+      initial="hidden"
+      animate={ control }
+    >
       <h1 className="text-3xl font-semibold text-[#a03d30]">Tecnologias</h1>
       <div className="flex flex-wrap justify-evenly gap-4 mt-5">
         {technologies.map((item) => (
@@ -20,7 +29,7 @@ function Technologies() {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

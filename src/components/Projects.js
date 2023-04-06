@@ -1,8 +1,18 @@
+import { motion } from 'framer-motion';
 import projects from '../data/projects';
+import useMotion from '../hooks/useMotion';
 
 function Projects() {
+  const [ref, boxVariant, control] = useMotion();
+
   return (
-    <div className="mt-4 mb-4">
+    <motion.div
+      className="mt-4 mb-4"
+      ref={ ref }
+      variants={ boxVariant }
+      initial="hidden"
+      animate={ control }
+    >
       <h1 className="text-3xl font-semibold text-[#a03d30]">Projetos</h1>
       <div className="flex flex-wrap justify-evenly mt-3 gap-8 ">
         {projects.map((project) => (
@@ -28,7 +38,7 @@ function Projects() {
           </a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,6 +1,16 @@
+import { motion } from 'framer-motion';
+import useMotion from '../hooks/useMotion';
+
 function AboutMe() {
+  const [ref, boxVariant, control] = useMotion();
   return (
-    <div className="mt-4">
+    <motion.div
+      className="mt-4"
+      ref={ ref }
+      variants={ boxVariant }
+      initial="hidden"
+      animate={ control }
+    >
       <p className="text-lg font-medium text-white mt-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -10,7 +20,7 @@ function AboutMe() {
         nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
         tenetur error, harum nesciunt ipsum debitis quas aliquid.
       </p>
-    </div>
+    </motion.div>
   );
 }
 

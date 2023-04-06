@@ -1,6 +1,17 @@
+import { motion } from 'framer-motion';
+import useMotion from '../hooks/useMotion';
+
 function Home() {
+  const [ref, boxVariant, control] = useMotion();
+
   return (
-    <div className="flex flex-wrap items-center place-content-around top-2 gap-4">
+    <motion.div
+      className="flex flex-wrap items-center place-content-around top-2 gap-4"
+      ref={ ref }
+      variants={ boxVariant }
+      initial="hidden"
+      animate={ control }
+    >
       <div className="flex flex-col items-start">
         <p className="text-base text-[#a03d30] font-medium">Hello World</p>
         <h1 className="text-white text-6xl font-bold">Eu sou Roger,</h1>
@@ -18,7 +29,7 @@ function Home() {
           width="400px"
         />
       </a>
-    </div>
+    </motion.div>
 
   );
 }
