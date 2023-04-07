@@ -10,7 +10,7 @@
 
 ## :desktop_computer:  Tecnologias
 Para o desenvolvimento utilizei as seguintes tecnologias: 
-- **ReactJs** como bibilhoteca.
+- **ReactJs** como bibilioteca.
 - **JavaScript** como linguagem;
 - **Tailwind CSS** para a estilização
 - **Framer Motion** para animação
