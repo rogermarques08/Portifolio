@@ -6,11 +6,12 @@ function Home() {
 
   return (
     <motion.div
-      className="flex flex-wrap items-center place-content-around top-2 gap-4"
+      className="flex flex-wrap items-center place-content-around top-2 gap-4 mt-6"
       ref={ ref }
       variants={ boxVariant }
       initial="hidden"
       animate={ control }
+      id='home'
     >
       <div className="flex flex-col items-start">
         <p className="text-base text-[#a03d30] font-medium">Hello World</p>

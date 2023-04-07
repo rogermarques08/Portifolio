@@ -6,39 +6,37 @@ function Projects() {
   const [ref, boxVariant, control] = useMotion();
 
   return (
-    <motion.div
-      className="mt-4 mb-4"
-      ref={ ref }
-      variants={ boxVariant }
-      initial="hidden"
-      animate={ control }
-    >
+    <div className="mt-[60px] scroll-smooth" id="projects">
       <h1 className="text-3xl font-semibold text-[#a03d30]">Projetos</h1>
-      <div className="flex flex-wrap justify-evenly mt-3 gap-8 ">
+      <motion.div
+        className="flex flex-wrap justify-evenly mt-[20px] gap-8 "
+        ref={ref}
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}
+      >
         {projects.map((project) => (
           <a
-            href={ project.link }
+            href={project.link}
             target="_blank"
             rel="noreferrer"
-            key={ project.name }
+            key={project.name}
           >
-            <div className="w-80 bg-[#202020] p-3 rounded-xl">
+            <div className="w-80 bg-[#202020] p-3 rounded-xl text-center">
               <img
-                src={ project.img }
-                alt={ project.name }
+                src={project.img}
+                alt={project.name}
                 width="100%"
                 className="rounded"
               />
-              <h1 className="text-2xl mt-2 text-neutral-400 font-semibold">
-                {project.name}
-              </h1>
+              <h1 className="text-2xl mt-2 text-white">{project.name}</h1>
               <p className="font-semibold text-[#a03d30]">{project.stack}</p>
-              <p className="text-white font-semibold mt-2">{project.desc}</p>
+              <p className="text-white font-light mt-2">{project.desc}</p>
             </div>
           </a>
         ))}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
 
