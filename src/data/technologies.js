@@ -15,7 +15,7 @@ const technologies = [
   },
   {
     icon: <IoLogoJavascript />,
-    name: 'JAVA SCRIPT',
+    name: 'JAVASCRIPT',
   }, {
     icon: <FaReact />,
     name: 'REACT',
@@ -30,7 +30,7 @@ const technologies = [
     name: 'MYSQL',
   }, {
     icon: <SiTypescript />,
-    name: 'TYPE SCRIPT',
+    name: 'TYPESCRIPT',
   },
 ];
 

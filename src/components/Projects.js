@@ -9,7 +9,11 @@ function Projects() {
     <div className="mt-[60px] scroll-smooth" id="projects">
       <h1 className="text-3xl font-semibold text-[#a03d30]">Projetos</h1>
       <motion.div
-        className="flex flex-wrap justify-evenly mt-[20px] gap-8 "
+        className="
+        flex mt-[20px] gap-8 
+        max-sm:overflow-x-scroll max-sm:p-4
+        sm:flex sm:justify-center sm:flex-wrap
+        "
         ref={ref}
         variants={boxVariant}
         initial="hidden"
@@ -22,7 +26,10 @@ function Projects() {
             rel="noreferrer"
             key={project.name}
           >
-            <div className="w-80 bg-[#202020] p-3 rounded-xl text-center">
+            <motion.div
+              className="w-80 bg-[#202020] p-3 rounded-xl text-center"
+              whileHover={{ scale: 1.09 }}
+            >
               <img
                 src={project.img}
                 alt={project.name}
@@ -32,7 +39,7 @@ function Projects() {
               <h1 className="text-2xl mt-2 text-white">{project.name}</h1>
               <p className="font-semibold text-[#a03d30]">{project.stack}</p>
               <p className="text-white font-light mt-2">{project.desc}</p>
-            </div>
+            </motion.div>
           </a>
         ))}
       </motion.div>
