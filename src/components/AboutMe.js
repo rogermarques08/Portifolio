@@ -6,19 +6,19 @@ function AboutMe() {
   return (
     <motion.div
       className="mt-4"
-      ref={ ref }
-      variants={ boxVariant }
+      ref={ref}
+      variants={boxVariant}
       initial="hidden"
-      animate={ control }
+      animate={control}
     >
       <p className="text-lg font-light text-white mt-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-        tenetur error, harum nesciunt ipsum debitis quas aliquid.
+        Atualmente moro em Pará de Minas, uma cidade no interior de Minas
+        Gerais e desde pequeno sempre tive curiosidade o desbravar o mundo da
+        tecnologia. Com isso em mente, estou fazendo o curso de Desenvolvimento
+        Web da Trybe (Full Stack), com previsão de término no mês de julho. Ao
+        longo dos últimos meses, venho adquirindo experiência através da
+        realização de projetos estou disponível para começar a atuar como
+        programador tanto front, como back end.
       </p>
     </motion.div>
   );

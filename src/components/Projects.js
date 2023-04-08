@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { MdSwipe } from 'react-icons/md';
 import projects from '../data/projects';
 import useMotion from '../hooks/useMotion';
 
@@ -34,7 +35,7 @@ function Projects() {
                 src={project.img}
                 alt={project.name}
                 width="100%"
-                className="rounded"
+                className="rounded-[20px%]"
               />
               <h1 className="text-2xl mt-2 text-white">{project.name}</h1>
               <p className="font-semibold text-[#a03d30]">{project.stack}</p>
@@ -43,6 +44,12 @@ function Projects() {
           </a>
         ))}
       </motion.div>
+      <div className="gap-4 items-center mt-4 max-sm:flex sm:hidden">
+        <p className="  text-[#a03d30] text-xl">Deslize para o lado</p>
+        <span className="text-[#a03d30] text-[25px]">
+          <MdSwipe />
+        </span>
+      </div>
     </div>
   );
 }

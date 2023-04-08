@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import useMotion from '../hooks/useMotion';
+import me from './me.png';
 
 function Home() {
   const [ref, boxVariant, control] = useMotion();
@@ -14,7 +15,7 @@ function Home() {
       id='home'
     >
       <div className="flex flex-col items-start">
-        <p className="text-base text-[#a03d30] font-medium">Hello World</p>
+        <p className="text-base text-[#a03d30] font-medium">Hello World!</p>
         <h1 className="text-white text-6xl font-bold">Eu sou Roger,</h1>
         <h2
           className="text-xl mt-2 text-neutral-400 font-medium"
@@ -22,14 +23,14 @@ function Home() {
           Desenvolvedor Web Full-Stack
         </h2>
       </div>
-      <a href="https://www.flaticon.com/authors/sketchandbuild" target="_black">
+      <div className="p-[10px] rounded-[20%] bg-[#a03d30]/[0.15]">
         <img
-          className="my-3"
-          src="https://cdn-icons-png.flaticon.com/512/805/805370.png"
+          className="my-3 rounded-[20%]"
+          src={me}
           alt="profile-icon"
           width="400px"
         />
-      </a>
+        </div>
     </motion.div>
 
   );
