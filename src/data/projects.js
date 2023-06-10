@@ -9,6 +9,24 @@ const projects = [
     link: 'https://games-app-rosy.vercel.app/',
   },
   {
+    name: 'Capputeeno',
+    img: "https://i.ibb.co/pLPD0Mg/Captura-de-tela-de-2023-06-10-11-19-20.png",
+    stack: 'Front-End',
+    desc: `Meu primeiro projeto desenvolvido em NextJs onde pude colocar em prática o conhecimento
+    que adquiri durante os estudos sobre o framework. A aplicação consiste em um E-commerce onde é
+    possível visualizar, consultar, e fazer pedidos dos produtos listados.`,
+    link: 'https://commerce-wine-seven-80.vercel.app/',
+  },
+  {
+    name: 'Fast Beer',
+    img: "https://i.ibb.co/nrBsVG9/Captura-de-tela-de-2023-05-29-11-12-10.png",
+    stack: 'Full-Stack',
+    desc: `Projeto Full Stack desenvolvido em grupo onde implementei o front-end com suporte para mobile e desktop que representa 
+    um sistema de um app de delivery, onde é possível selecionar bebibas de um cardápio, executar um 
+    pedido e verificar o status da entrega.`,
+    link: 'https://github.com/rogermarques08/delivery-app',
+  },
+  {
     name: 'Previsão do Tempo',
     img: 'https://i.ibb.co/RSZPyYq/Captura-de-tela-de-2023-04-04-10-41-35.png',
     stack: 'Front-End',
